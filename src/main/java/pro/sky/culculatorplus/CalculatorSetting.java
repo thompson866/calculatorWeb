@@ -33,7 +33,7 @@ public class CalculatorSetting {
         if (num1 == null || num2 == null || num1.isEmpty() || num2.isEmpty()) {
             return "Введите все числа";
         }
-        return num1 + " + " + num2 + " = " + service.sum(Integer.parseInt(num1), Integer.parseInt(num2));
+        return num1 + " - " + num2 + " = " + service.sum(Integer.parseInt(num1), Integer.parseInt(num2));
     }
 
 
@@ -42,7 +42,7 @@ public class CalculatorSetting {
         if (num1 == null || num2 == null || num1.isEmpty() || num2.isEmpty()) {
             return "Введите все числа";
         }
-        return num1 + " + " + num2 + " = " + service.sum(Integer.parseInt(num1), Integer.parseInt(num2));
+        return num1 + " * " + num2 + " = " + service.sum(Integer.parseInt(num1), Integer.parseInt(num2));
     }
 
 
@@ -54,7 +54,7 @@ public class CalculatorSetting {
         if (num2.equals("0")){
             return "на ноль делить нельзя";
         }
-        return num1 + " + " + num2 + " = " + service.sum(Integer.parseInt(num1), Integer.parseInt(num2));
+        return num1 + " / " + num2 + " = " + service.sum(Integer.parseInt(num1), Integer.parseInt(num2));
     }
 }
 
