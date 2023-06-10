@@ -25,7 +25,7 @@ public class CalculatorSetting {
         if (num1 == null || num2 == null || num1.isEmpty() || num2.isEmpty()) {
             return "Введите все числа";
         }
-        return num1 + " + " + num2 + " = " + service.sum(Integer.parseInt(num1), Integer.parseInt(num2));
+        return num1 + " + " + num2 + " = " + service.plus(Integer.parseInt(num1), Integer.parseInt(num2));
     }
 
     @GetMapping("/minus")
